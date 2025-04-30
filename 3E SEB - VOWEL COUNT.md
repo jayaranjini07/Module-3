@@ -1,5 +1,5 @@
 # Exp.No:3e
-## SEB - STRING SLICING
+## SEB - VOWEL COUNT 
 
 ---
 

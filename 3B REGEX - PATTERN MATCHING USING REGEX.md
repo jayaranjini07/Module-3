@@ -3,27 +3,38 @@
 
 ---
 
-### AIM  
-To write a Python program that matches a string containing an `'a'` followed by **two to three `'b'` characters** using regular expressions.
-
+### AIM
+To write a Python program that matches a string that begins with  "a"  followed by zero or more b's 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept a string `str1` from the user.  
-3. Define the regular expression pattern as `r"[a]+b{2,3}"`.  
-4. Use the `re.match()` function to check if the string `str1` matches the pattern.  
-5. If a match is found, print `"Found a match!"`.  
-6. If no match is found, print `"Not matched!"`.  
-7. Terminate the program.
+1. Start
+2.Take input from the user and store it in variable i.
+3. Use the re.findall() function with the regular expression ^a(b*)$:
+4. Check if the result of re.findall() (stored in variable x) is not empty:
+   - If it is not empty (if(x):), this means the input string matches the pattern completely.
+   - Print "Found a match!"
+5. If the result is empty (no match found), print "Not matched!"
+6. End
 
 ---
 
 ### PROGRAM
 
-```
+```pyhton
+import re
+i=input()
+x=re.findall(r"^a(b*)$",i)
+if(x):
+    print("Found a match!")
+else:
+    print("Not matched!")
+
 ```
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/81a68390-f848-455f-b173-230ec7a45507)
+
 ### RESULT
+Thus the Python program that matches a string that begins with  "a"  followed by zero or more b's was implemented and executed successfully.

@@ -1,30 +1,38 @@
 # Exp.No:3a
-## STRING - FIND AND REPLACE
+## STRING - SWAPCASE
 
 ---
 
 ### AIM  
-To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
+To write a python function "convert" to accept a string and converts the uppercase character into lowercase character, lowercase character into uppercase  character.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Input the original string `str1` and the word to be replaced `replace_str`.  
-3. Ask the user to input the new replacement word `str2`.  
-4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
-5. Store the modified string in `str3`.  
-6. Display the original string (`str1`) and the modified string (`str3`).  
-7. Terminate the program.
+1. Start
+2. Input a string a.
+3. Use the swapcase() method on string a:
+     This method changes all uppercase letters to lowercase.
+     It changes all lowercase letters to uppercase.
+4. Store the swapped-case string in variable b.
+5. Print the value of b.
+6. End
 
 ---
 
 ### PROGRAM
 
 ```
+def convert(a):
+    b=a.swapcase()
+    print(b)
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/f8ef4d96-3ce4-4226-9135-01d2301af097)
+
 ### RESULT
+
+Thus a python function "convert" to accept a string and converts the uppercase character into lowercase character, lowercase character into uppercase  character was implemented and executed successfully.

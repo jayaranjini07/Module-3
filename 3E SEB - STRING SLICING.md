@@ -4,27 +4,41 @@
 ---
 
 ### AIM  
-To write a Python function that accepts a string and forms a new string by reversing the characters from the **4th position to the 10th position** with **alternate characters**, and then prints the new string.
+To Write a python function Vowcount() that accepts a string and should count and display the occurrence of words starting with a vowel in the given string.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept a string as input.  
-3. Take a slice of the input string from index **2** to **10** (Python uses 0-based indexing, so index 2 refers to the 3rd character, i.e., the 4th character in natural terms).  
-4. Reverse the sliced substring.  
-5. Extract every second character from the reversed substring using slicing (`[::2]`).  
-6. Print the final processed string.  
-7. Terminate the program.
+1. Start
+2. Input: A string s (sentence or phrase).
+3. Split the string s into a list of words using split() and update s.
+4. Initialize a counter c to 0 for counting words that start with vowels.
+5. For each word i in the list s:
+-Check if the first character of the word (i[0]) is a vowel (i.e., in "AEIOUaeiou").
+ -If yes, print the word.
+ -Increment the counter c by 1.
+6. After checking all words, print the total count: "No. of Words starts with vowels are", c.
+7. End
 
 ---
 
 ### PROGRAM
 
 ```
+def  Vowcount(s):
+    s=s.split()
+    c=0
+    for i in s:
+        if i[0] in "AEIOUaeiou":
+            print(i)
+            c+=1
+    print("No. of Words starts with vowels are",c)
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/f2aac746-288e-4055-a821-79e11ba7012d)
+
 ### RESULT
+Thus the python function Vowcount() that accepts a string and should count and display the occurrence of words starting with a vowel in the given string was implemented and executed successfully.

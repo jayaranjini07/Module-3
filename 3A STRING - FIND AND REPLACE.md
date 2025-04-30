@@ -13,8 +13,8 @@ To write a python function "convert" to accept a string and converts the upperca
 1. Start
 2. Input a string a.
 3. Use the swapcase() method on string a:
-     This method changes all uppercase letters to lowercase.
-     It changes all lowercase letters to uppercase.
+    - This method changes all uppercase letters to lowercase.
+    - It changes all lowercase letters to uppercase.
 4. Store the swapped-case string in variable b.
 5. Print the value of b.
 6. End
